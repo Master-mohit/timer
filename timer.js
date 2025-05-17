@@ -10,6 +10,7 @@
 //   }, 100);
 
   let count = 0;
+  const button = document.querySelector('#time button');
 const timer = document.getElementById('progressText');
 
 const interval = setInterval(() => {
@@ -20,5 +21,9 @@ const interval = setInterval(() => {
   timer.innerText = "Progress: " + count + "%";
   if (count === 100) {
     clearInterval(interval);
+
+    button.style.display = "initial";
+    timer.style.display = "none";// Show the button when progress reaches 100%
+
   }
 }, 100);
