@@ -27,7 +27,6 @@ border: 2px solid white;
 overflow: hidden;
 z-index: 1;
 }
-
 #time button:after{
     content: '';
     position: absolute;
