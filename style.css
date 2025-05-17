@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+#timer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+#timer button{
+    position: relative;
+    background-color: transparent;
+    padding: 1.3vw 3vw;
+    font-size: 2vw;
+    border: 2px solid;
+    overflow: hidden;
+    
+}
+#timer button:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    transition: all ease 0.5s;
+
+    left: 0;
+    bottom: -100%;
+}
+
+#timer button span {
+    display: block;
+    position: relative;
+    z-index: 9;
+    transition: all ease 0.5s;
+    color: white;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+#timer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+#timer h1{
+    transition: all ease 0.5s;
+    transition: delay 2s;
+}
+#timer button{
+    color: black;
+    background-color: transparent;
+    padding: 1.3vw 3vw;
+    font-size: 2vw;
+    border: 2px solid;
+    z-index: 99;
+    
+}
+#timer button:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    transition: all ease 0.5s;
+    left: 0;
+    bottom: -100%;
+    
+}
+
+#timer button span {
+    display: block;
+    position: relative;
+    z-index: 9;
+    transition: all ease 0.5s;
+
+}
+
+#timer button:hover::after {
+    bottom: 0;
+}
+
+
+
+#timer button:hover span {
+    color: black;
+}
+
